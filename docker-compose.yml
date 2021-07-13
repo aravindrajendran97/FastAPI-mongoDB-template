@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+
+  fastapi-mongo-template: # Change this
+    build: '.'
+    container_name: fastapi-mongo-template # Change this
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs/:/app/logs/
